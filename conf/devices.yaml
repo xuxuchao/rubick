@@ -1,0 +1,41 @@
+common:
+  noReset: false
+  unicodeKeyboard: true
+  resetKeyboard: false
+  automationName: uiautomator2
+
+apps:
+  android:
+    appPackage: com.secoo
+    appActivity: com.secoo.app.mvp.ui.activity.LauncherActivity
+
+devices:
+  YS4:
+    platformName: Android
+    platformVersion: 4.4.2
+    deviceName: 127.0.0.1:62001
+  YS5:
+    platformName: Android
+    platformVersion: 5.1.1
+    deviceName: 127.0.0.1:62025
+  YS7:
+    platformName: Android
+    platformVersion: 7.1.2
+    deviceName: 127.0.0.1:62026
+  A9:
+    platformName: Android
+    platformVersion: 8.0.0
+    deviceName: 0e41dda7
+  SauceLabA:
+    platformName: Android
+    testobject_api_key: EAF17BA81B114D2AA77BE1F282414D3E
+    autoGrantPermissions: true
+  XY5:
+    platformName: Android
+    platformVersion: 5.1.1
+    deviceName: 127.0.0.1:21503
+
+  
+hubs:
+  local: http://localhost:4723/wd/hub
+  sauce_lab_eu: https://eu1.appium.testobject.com/wd/hub

@@ -1,0 +1,30 @@
+run:
+  app: android
+  device: A9
+  hub: local
+  implicitly_wait: 6
+  webdriver_wait: 20
+  is_send_email: false
+
+log:
+  log_dir: log
+  log_level: info
+
+report:
+  report_dir: report
+  report_title: Test Report
+  report_description: this is the test report
+
+snapshot:
+  snapshot_dir: report/snapshot
+
+email:
+  smtp_server: smtp.163.com
+  smtp_user: ivan-me@163.com
+  smtp_password: hanzhichao123
+  subject: Test Report
+  body: hi, all<br>Test complete, please see the attachments
+  receivers:
+    - superhin@126.com
+    - 503888058@qq.com
+
